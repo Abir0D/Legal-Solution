@@ -8,20 +8,34 @@
     <!-- install daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@400;600&display=swap"  rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/0d75634f0f.js" crossorigin="anonymous"></script>
     <style>
         :root,
         [data-theme] {
             background-color: white;
         }
-        .font-garamond{
+
+        .font-garamond {
             font-family: "EB Garamond", serif;
         }
-        .font-poppins{
+
+        .font-poppins {
             font-family: "Poppins", sans-serif;
         }
     </style>
@@ -29,9 +43,53 @@
 
 <body>
     <header>
-        <nav>
-
-        </nav>
+       <nav class="">
+         <div class="flex ml-[400px]  mt-12">
+            <div class="flex justify-center items-center gap-4">
+                <img class="w-11" src="images/business.png" alt="">
+                <h4 class="font-garamond text-4xl font-extrabold text-[#414040]">Justice</h4>
+            </div>
+            <div class="list-none flex justify-center items-center ml-[135px] gap-8 text-[#707070] font-poppins text-base font-normal">
+                
+                <li><a href="">Home</a></li>
+                <div class="flex justify-center items-center gap-3">
+                <li><a href="">Service</a></li>
+                <i class="fa-solid fa-chevron-right w-2"></i>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                <li><a href="">Class</a></li>
+                <i class="fa-solid fa-chevron-right w-2"></i>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                <li><a href="">Blog</a></li>
+                <i class="fa-solid fa-chevron-right w-2"></i>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                <li><a href="">Contact Us</a></li>
+                <i class="fa-solid fa-chevron-right w-2"></i>
+                </div>
+            </div>
+            <button class="ml-36 text-white text-lg font-semibold font-poppins bg-[#B68C5A] py-3 px-7 rounded-lg">Free Consultation</button>
+         </div>
+       </nav>
+       <section class="my-12">
+          
+        <div class="Hero  " style="background-image: url(/images/banner.png); width: 1170px; margin-left: 385px; min-height: 550px;">
+            <div class="hero-overla bg-gradient-to-r from-[#111111] to-[#111111]"></div>
+            <div class="hero-content text-center ">
+              <div class="">
+                <h1 class="pb-6 pt-[104px] text-[#FFFFFF] font-garamond font-extrabold text-7xl">We Provide Effective <br>
+                     Legal Solutions</h1>
+                <p class="mb-5 text-[#E7E7E7] font-poppins font-normal text-base">There are many variations of passages of Lorem Ipsum available, but the majority <br>
+                     have suffered alteration in some form, by injected humour.</p>
+                <div class="space-x-6">
+                    <input class="bg-[#FFFFFF] py-5 pl-5 pr-[314px] rounded-lg font-normal text-base font-poppins" type="text" placeholder="Search your services">
+                    <button class="py-5 px-12 rounded-lg bg-[#B68C5A] text-[#FFFFFF]">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>  
     </header>
     <main>
 
